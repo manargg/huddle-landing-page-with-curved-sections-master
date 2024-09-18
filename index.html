@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  body{
+    margin: 0;
+  }
+   /*--------------------- the header ---------------------------*/
+
+  .header{
+    width: 100%;
+    
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo{
+    width: 200px;
+    background-image: url(./images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+  .btn{
+    width: 150px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: 1px solid hsl(322, 100%, 66%);
+    color: hsl(322, 100%, 66%);
+    text-transform: capitalize;
+    margin-top: 50px;
+    margin-right: 100px;
+    background-color: #fff;
+  }
+
+  .content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*--------------------- section-1 ---------------------------*/
+    .section-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+    
+    }
+    .section-1 h1{
+      text-transform: capitalize;
+    
+    }
+    .section-1 p{
+     
+      line-height: 1.5;
+    }
+    .btn-2{
+      width: 250px;
+      padding:15px;
+      border-radius: 50px;
+      border: 1px solid hsl(321, 100%, 78%);
+      background-color: hsl(321, 100%, 78%);
+      color: #fff;
+      text-transform: capitalize;
+      margin-top: 30px;
+      margin-bottom: 80px;
+    }
+    .screen-mockups{
+      width: 60%;
+      
+    }
+  
+
+   /*--------------------- section-2 ---------------------------*/
+   .section-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    
+   }
+
+    .section-2 h1{
+      font-size: 3.5rem;
+      text-transform: capitalize;
+    }
+   
+    .section-2 p{
+      color: hsl(191, 6%, 35%);
+      text-transform: capitalize;
+
+    }
+    /*--------------------- section-3 ---------------------------*/
+
+    .grow-together-top{
+      width: 100%;
+      height: 150px;
+      background-image: url(./images/bg-section-top-desktop-1.svg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+
+    }
+    .grow-together-sec{
+      background-color: hsl(207, 100%, 98%);
+      width: 100%;
+      height: 800px;
+      display: flex;
+      flex-direction: row;
+      
+      
+    }
+    .text-sec{
+      float: left;
+      width: 50%;
+      margin-top: 250px;
+      margin-left: 200px;
+     
+    }
+    .text-sec h2{
+      text-transform: capitalize;
+      margin-bottom: 20px;
+      font-weight: 800;
+      font-size: 40px;
+    }
+    .text-sec p{
+      font-size: 20px;
+    }
+    .grow-together{
+      float: right;
+      width: 50%;
+      height: 700px;
+      margin-top: 50px;
+      margin-right: 150px;
+      
+    }
+    
+     /*-------------------------------mobile-devices-----------------------------*/
+
+    @media (min-width: 375px) and (max-width: 480px) {
+     
+    /*------------------------the header---------------------*/
+      .header .btn{
+        width: 100px;
+        padding: 10px 15px;
+        margin: 0;
+        margin-top: 30px;
+        margin-right: 30px;
+
+      
+      }
+      .header .logo{
+        width: 120px !important;
+        margin: 0;
+        margin-top: 40px;
+        margin-left: 30px;
+        
+      }
+
+      .content{
+        margin: auto;
+      }
+      .screen-mockups{
+        width: 300px !important;
+      }
+      /*------------------------section 1---------------------*/
+      .section-1{
+        margin-top: 100px;
+        width: 100%;
+        
+      }
+      .section-1 p{
+        font-size: 16px;
+        text-align: center;
+        display: block;
+        padding: 0 25px;
+        line-height: 1.5;
+       
+      }
+      .section-1 h1{
+        font-size: 30px;
+      }
+      .section-1 p br{
+        display: none ;
+      }
+      .btn-2{
+        width: 220PX;
+      }
+      /*------------------------section 2---------------------*/
+      .section-2{
+        flex-direction: column;
+        gap: 100px;
+      }
+      /*------------------------section 3---------------------*/
+      
+      .grow-together-sec{
+        flex-direction: column-reverse;
+       
+      }
+      .grow-together{
+        width: 70%;
+        margin: auto;
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+      }
+      .text-sec{
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        margin-top: 0;
+      
+      }
+      .text-sec h2{
+        font-size: 25px;
+    
+      }
+      .text-sec p{
+        padding: 0 40px;
+        font-size: 13px;
+        line-height: 1.5;
+      }
+      .text-sec br{
+        display: none;
+      }
+
+      }
+    
+    
+    
+  </style>
+</head>
+<body>
+  <!--------------------------the header----------------------------->
+  <div class="header">
+    <div class="logo"> </div>
+    <a href=""><button type="submit" class="btn"> try it free</button></a>
+  </div>
+  <!--------------------------the content ----------------------------->
+  <div class="content">
+    <!--------------------------section 1 ----------------------------->
+    <div class="section-1">
+      <h1>build the community your fans will love</h1>
+      <p>Huddle re-imagines the way we build communities. you have a <br>
+       voice, but so does your audience. create connections with your <br>
+      users as you engage in genuine discussion.</p>
+      <a href=""><button value="submit" class="btn-2">get started for free</button></a>
+      <img src="./images/screen-mockups.svg" alt="" class="screen-mockups">
+    </div>
+    
+
+    <!--------------------------section 2 ----------------------------->
+    <div class="section-2">
+      <div class="left-box">
+        <img src="./images/icon-communities.svg" alt="">
+        <h1>1.4k+</h1>
+        <p>communities formed</p>
+      </div>
+      <div class="right-box">
+        <img src="./images/icon-messages.svg" alt="">
+        <h1>2.7m+</h1>
+        <p>message sent</p>
+      </div>
+    </div>
+     <!--------------------------section 3 ----------------------------->
+    <div class="grow-together-top"> </div>
+    <div class="grow-together-sec">
+      <div class="text-sec"> 
+        <h2>grow together</h2>
+        <p>Generate meaningful discussion with your audience and build a <br>
+         strong, loyal community. think of the insightful conversation you <br>
+         miss out on with a feedback form.</p>
+         </div>
+        <img src="./images/illustration-grow-together.svg" alt="" class="grow-together">
+  </div>
+  <div class="grow-together-bottom"></div>
+
+
+</div>
+  
+</body>
+</html>
